@@ -1,0 +1,85 @@
+body {
+	background-color: white;
+	font-family: Helvetica, Arial, sans-serif;
+	/* the three fonts here are to specify in order of preference based on what the reader has. 
+	On MACs, people have Helvetica, on PCs, they have Arial.*/
+	background-image:url(../images/bg.jpg);
+	/* the two dots is basically saying back one folder*/
+	background-repeat:no-repeat;
+	/*this is the best way to make sure backgrounds don't need to be repeated*/
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-size: cover;
+	/*cover makes sure there's no space that isn't covere*/
+}
+
+main {
+	background-color: rgba(206,231,230,0.95);
+	padding: 20px;
+	max-width:1000px;
+	/*this makes sure that the maximum width is a certain scale*/
+	margin: 0 auto;
+	box-shadow: 0px 0px 10px 10px #979B8D;
+	/*if you were to use this, look up what these 4 numbers should be*/
+}
+
+h1 {
+	margin-top:0;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+	text-shadow: -5px -5px 0px powderblue,5px 5px 0px #048A81;
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing:10px;
+}
+
+img {
+	display:block;
+	/*if we don't do this, then the browser won't let us do the next things 
+	We're saying, don't display it like a 'word', but like a box */
+	margin: 0 auto;
+	/* '0' is for the top and bottom, and 'auto' is what it is for left and right
+	this means it changes automatically according to how big the browser is. 
+	This makes sure that it looks nicely on everyone's screen. */
+	/* margins can be negative too so things overlap*/
+	border: 5px dotted #048A81;
+	border-radius: 10px;
+}
+
+p,ul,ol{
+	line-height:1.6;
+	list-style: none;
+	padding-left:0;
+	/*to know if it's padding or margin that you need to change, 
+	go to inspect elements and figure out what to overwrite.*/
+	/*z-index is how things are stacked on top of each other*/
+}
+
+.rhino{
+	/*this is how we define a class, so in html we can write p class ="rhino"*/
+}
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #048A81;
+}
+
+a:visited /*these are pseudo classes, like focus*/{
+	color:#F39B6D;
+}
+
+a:hover {
+	color: #048A81;
+}
+
+h3:hover {
+	text-decoration: underline;
+	color:darkgrey;
+	cursor:pointer;
+}
+
